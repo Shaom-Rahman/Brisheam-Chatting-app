@@ -1,0 +1,90 @@
+.Login{
+    @apply px-2
+}
+.menuRow{
+    @apply flex flex-col md:flex-row gap-[30px] md:gap-[80px]
+}
+.mainText h1{
+    @apply font-OverPass font-extrabold text-[20px] md:text-[36px] text-brandColor
+     pt-[108px] pb-[21px] 
+}
+.mainText p{
+    @apply font-normal text-[16px] md:text-[24px] text-brandColor font-Nunito
+}
+form{
+    @apply w-[300px] md:w-[640px] 
+}
+.name{
+    @apply font-Nunito font-semibold text-[18px] md:text-[28px] text-brandColor pt-[30px]
+     md:pt-[64px] pb-[16px]
+}
+form .input1{ 
+    @apply w-[290px] md:w-[640px] py-2 md:py-[24px] px-[32px] border-[2px] outline-none
+     border-[#789ADE] rounded-[80px] font-normal font-Nunito text-[16px] md:text-[24px] text-[#C8D3F9]
+}
+.pass{
+    @apply font-Nunito font-semibold text-[18px] md:text-[28px] text-brandColor
+     pt-[20px] md:pt-[36px] pb-[16px]
+}
+form .input2{
+    @apply relative w-[290px] md:w-[640px] py-[5px] md:py-[24px] px-[32px] border-[2px] outline-none 
+    border-[#789ADE] rounded-[80px] font-normal font-Nunito text-[24px] text-[#C8D3F9]
+}
+.eye {
+    @apply absolute top-[36%] md:top-[64%] left-[80%] md:left-[40%] text-[20px]
+     md:text-[32px] text-[#9EB0EA]
+}
+.Others{
+    @apply  flex justify-between pt-[36px] pb-[55px]
+}
+.remember{
+    @apply flex  items-center gap-[16px]
+}
+.circle{
+    @apply text-[20px] md:text-[48px] text-[#9EB0EA]
+}
+.remember p{
+    @apply font-Nunito font-normal text-[14px] md:text-[20px] text-brandColor
+}
+.forget p{
+    @apply font-Nunito font-semibold text-[14px] md:text-[20px] text-[#8699DA] 
+}
+.menuButton{
+    @apply bg-[#8699DA] w-[290px] md:w-[640px] rounded-[80px]
+}
+.menuButton button{
+    @apply font-Nunito font-extrabold text-[18px] md:text-[28px] outline-none text-center text-white
+     p-[16px] md:pt-[24px] pb-[18px] px-[110px] md:px-[265px]
+}
+.socialParts p{
+    @apply relative font-Nunito font-normal text-center text-[20px] text-brandColor 
+    pt-[44px] pb-[24px]
+}
+.socialParts p::before {
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #C8D3F9;
+    position: absolute;
+    top: 59%;
+    left: 18%;
+    
+}
+.socialParts p::after{
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #C8D3F9;
+    position: absolute;
+    top: 59%;
+    left: 63%;
+}
+.socialSite{
+    @apply flex justify-center items-center gap-[18px] md:gap-[60px]
+}
+.menuImage{
+    @apply w-[100%] h-[100%] mt-[40px] md:mt-[185px]
+}
+
