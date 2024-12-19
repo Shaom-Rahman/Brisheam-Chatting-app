@@ -5,8 +5,9 @@ import { FaApple } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa6";
 import { FaRegEye } from "react-icons/fa";
 import { Icon } from "@iconify/react";
-import { getAuth, createUserWithEmailAndPassword, signInWithPopup, sendEmailVerification } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import { Slide, toast } from 'react-toastify';
+
 
 const Register = () => {
 // ---------------------------------- useState part ----------------------------
@@ -15,8 +16,9 @@ const Register = () => {
     const [Password , setPassword] = useState('')
     const [EmailError , setEmailError] = useState('')
     const [PasswordError , setPasswordError] = useState('')
-//  -------------------------------- firebase variables ------------------------ -
+//  -------------------------------- firebase variables -------------------------
     const auth = getAuth();
+
 // ----------------------------------- functions part ----------------------------
    const handelShow = ()=>{
     setShow(!Show)
@@ -113,7 +115,7 @@ const Register = () => {
                         <p > or continue with</p>
                     </div>
                     <div className="socialSite ">
-                        <button onClick={handelGoogle} >
+                        <button >
                             <FcGoogle className='w-[120px] h-[80px] border-[2px] border-[#8699DA] p-[15px]
                          rounded-[8px] text-[25px] md:text-[48px]'/>
                         </button>
